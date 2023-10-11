@@ -1,46 +1,3 @@
-// script.js
-/*
-document.addEventListener('DOMContentLoaded', function() {
-  // Get all toggle buttons
-  const toggleButtons = document.querySelectorAll('.toggle-button');
-
-  // Add click event listeners to each toggle button
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Toggle the active class on the button
-      button.classList.toggle('active');
-
-      // Get the target toggle content element
-      const targetContent = document.getElementById(button.dataset.target);
-
-      // Toggle the display of the content
-      targetContent.style.display = targetContent.style.display === 'none' ? 'block' : 'none';
-    });
-  });
-}); */
-
-/* Background Animated
-function randomValues() {
-  anime({
-    targets: '.square, .circle, .triangle', // Corrected 'triagle' to 'triangle'
-    translateX: function() {
-      return anime.random(-500, 500);
-    },
-    translateY: function() {
-      return anime.random(-300, 300);
-    },
-    rotate: function() {
-      return anime.random(0, 360);
-    },
-    scale: function() {
-      return anime.random(0.2, 2);
-    },
-    duration: 1000,
-    easing: 'easeInOutQuad',
-    complete: randomValues,
-  });
-}
-randomValues(); */
 
 //Work section
 var imageThumbs = document.getElementById("image-thumbs");
@@ -73,4 +30,65 @@ scrollDownButton.addEventListener("click", () => {
   const targetSection = document.getElementById("#about");
   targetSection.scrollIntoView({ behavior: "smooth" });
 });
-  
+
+//Navigation bar
+$('.expandHome').mouseover(function() {
+  $('.sub-home').css({
+        'display': 'block'
+    }); 
+});
+$('.subnavbtn').mouseover(function() {
+  $('.sub-home').css({
+        'display': 'none'
+    }); 
+});
+
+$('#trapezoid').mouseleave(function() {
+  $('#trapezoid').css({
+        'margin-top': '-53px'
+    }); 
+    $('.sub-home').css({
+        'display': 'none'
+    }); 
+}).mouseenter(function() {
+  $('#trapezoid').css({
+        'margin-top': '0px'
+    }); 
+});
+              
+
+
+//Form submission
+document.querySelector('.form-box').addEventListener('submit', function (e) {
+  const firstName = document.querySelector('input[name="FirstName"]').value;
+  const lastName = document.querySelector('input[name="LastName"]').value;
+  const email = document.querySelector('input[name="Email"]').value;
+  const phoneNumber = document.querySelector('input[name="PhoneNumber"]').value;
+  const message = document.querySelector('textarea[name="Message"]').value;
+
+  if (!firstName || !lastName || !email || !message) {
+    e.preventDefault(); // Prevent form submission
+    alert('Please fill in all the required fields.');
+  }
+});
+
+/*
+//Gallery section
+const imageSources = [
+  "image1.jpg",
+  "image2.jpg",
+  "image3.jpg",
+  // Add more image URLs here
+];
+
+const galleryContainer = document.getElementById("imageGallery");
+
+imageSources.slice(0, 20).forEach((imageSource, index) => {
+  const imageDiv = document.createElement("div");
+  imageDiv.classList.add("col-md-3", "col-sm-6", "gallery-item");
+  const image = document.createElement("img");
+  image.src = imageSource;
+  image.alt = `Image ${index + 1}`;
+  imageDiv.appendChild(image);
+  galleryContainer.appendChild(imageDiv);
+}); */

@@ -22,52 +22,66 @@
          <!-- ======= Header ======= -->
          <header class="header">
           <main>
-          <div class="nav-container">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                  <ul class="navbar-nav mx-auto">
-                      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#our-work">Our Work</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#our-gallery">Our Gallery</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                  </ul>
-              </nav>
-          </div>
+            <nav class="navbar">
+              <div id="trapezoid">
+                <a class="sub-home" href="#">Home</a>
+                <a href="about.html" class="expandHome">About</a>
+                <div class="subnav">
+                  <button class="subnavbtn">Work<i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <div id="subnav-trapezoid">
+                      <a href="ongoing.html">OnGoing Projects</a>
+                      <a href="projectsdone.html">Projects Done</a>
+                      <a href="upcoming.html">UpComing</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="subnav">
+                  <button class="subnavbtn">Gallery<i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <div class="subnav-trapezoid">
+                      <a href="trainings.html">Trainings</a>
+                      <a href="field.html">Field</a>
+                      <a href="videos.html">Videos</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">Contact</a>
+              </div>
+            </nav>
+
       </header><!-- End Header -->
           <section class="home" id="home">
     <div class="container home-content">
-      <h1>Unlocking Minds, Shaping Futures, Connecting Dreams: Empowering Africa's Youth!</h1>
-      <h2>You Unlock your potential, reach for the stars, and make your dreams soar!</h2>
-      <div class="btn btn-primary scroll-down">Lets Go</div>
+      <h1 class="gradient-text">Unlocking Minds, Shaping Futures, Connecting Dreams: Empowering Africa's Youth!</h1>
+      <h2 class="gradient-text2">You Unlock your potential, reach for the stars, and make your dreams soar!</h2>
     </div>
   </section>
   <!--New About Section-->
   <section class="main-grid">
-    <div class="about">
+    <div class="about-container">
       <div class="about-content">
         <h1 class="page-title">About Us</h1>
-        <p class="subtitle">We are a non-profit organization based in Africa, committed to empowering children through education. Our sponsorship initiative links children with global financial support, granting them access to essential resources like books and supplies. Through mentorship and workshops, we guide them towards realizing their utmost capabilities. With the generous contributions of donors and sponsors, we are dedicated to forging a brighter future for African youth. Join our community today to be a part of this transformational journey!</p>
-      </div>
-      <div class="image-column">
+        <p>We are a non-profit organization based in Africa, committed to empowering children through education. Our sponsorship initiative links children with global financial support, granting them access to essential resources like books and supplies. Through mentorship and workshops, we guide them towards realizing their utmost capabilities. With the generous contributions of donors and sponsors, we are dedicated to forging a brighter future for African youth. Join our community today to be a part of this transformational journey!</p>
         <img class="main-image" src="img/about4.png" alt="About Us Image">
       </div>
-    </div>
+    
+    
   
-    <div class="mission">
-      <h2 class="section-title">Our Mission, Vision and Program</h2>
-      <div class="section-content">
-        <p>Our mission is rooted in the belief that education is the cornerstone of opportunity, enabling young minds to rise above challenges and shape a brighter future.</p>
-        <p>Through our sponsorship program, we link children with global financial support, ensuring access to vital resources such as books and supplies. By doing so, we empower their educational progress and personal development, helping them reach their full potential.</p>
-      </div>
+      <div class="about-content">
+        <h1>Our Mission, Vision and Program</h2>
+          <div class="column">
+           <p>Our mission is rooted in the belief that education is the cornerstone of opportunity, enabling young minds to rise above challenges and shape a brighter future.</p>
+           <p>Through our sponsorship program, we link children with global financial support, ensuring access to vital resources such as books and supplies. By doing so, we empower their educational progress and personal development, helping them reach their full potential.</p>
+        </div>
+        <h2>Our Community, Impact and Difference</h2>
+        <div class="column">
+           <p>At the heart of our organization lies a dedicated community of donors and sponsors, whose vital support is the driving force behind our endeavors. Their steadfast commitment and remarkable generosity enable us to touch the lives of innumerable children, leaving a profound and lasting impact. Together, we form a cohesive network of change-makers, bound by our shared vision of a brighter future for Africa's youth.</p>
+           <p>Our resolute mission revolves around empowering African children through education, recognizing education as a fundamental right that paves the way for progress. Leveraging global connections and fostering a nurturing community, we stand firm in our pledge to construct a more promising tomorrow. We cordially invite you to accompany us on this extraordinary journey of hope and transformation, as we work tirelessly to make a tangible difference and empower the upcoming generation.</p>
+        </div>
     </div>
-  
-    <div class="community">
-      <h2 class="section-title sub">Our Community, Impact and Difference</h2>
-      <div class="section-content">
-        <p>At the heart of our organization lies a dedicated community of donors and sponsors, whose vital support is the driving force behind our endeavors. Their steadfast commitment and remarkable generosity enable us to touch the lives of innumerable children, leaving a profound and lasting impact. Together, we form a cohesive network of change-makers, bound by our shared vision of a brighter future for Africa's youth.</p>
-        <p>Our resolute mission revolves around empowering African children through education, recognizing education as a fundamental right that paves the way for progress. Leveraging global connections and fostering a nurturing community, we stand firm in our pledge to construct a more promising tomorrow. We cordially invite you to accompany us on this extraordinary journey of hope and transformation, as we work tirelessly to make a tangible difference and empower the upcoming generation.</p>
-      </div>
-    </div>
+  </div>
   </section>
   
 
@@ -169,32 +183,34 @@
 
 <!--End of our work page-->
 
+
           <!--Gallery section-->
           <section class="gallery-us">
             <div class="intro">
-              <h2 class="gallery-view">Gallery</h2>
-              <p>Here's an overview of the work we do</p>
-            </div>
-            <div class="gallery-content">
-              <div class="gallery-selectionImages">
-                <h2>Images</h2>
-                <div class="gallery-link">
-                  <a href="img/about2.jpg">
-                    <img id="current-image" src="img/about2.jpg" alt="Image 1">
-                  </a>
-                </div>
-              </div>
-              <div class="gallery-selectionVideos">
-                <h2>Videos</h2>
-                <div class="gallery-item">
-                  <a href="video1.mp4" target="_blank">
-                    <video controls>
-                      <source src="video1.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </a>
-                </div>
-              </div>
+              <h1 class="gallery">The Gallery</h1>
+
+<div class="gallery-container">
+    <a href="trainings.html">
+        <div class="gallery-item">
+            <img src="img/training.jpg" alt="Image 1">
+            <p>Trainings</p>
+        </div>
+    </a>
+    
+    <a href="field.html">
+        <div class="gallery-item">
+            <img src="img/field.png" alt="Image 2">
+            <p>Field</p>
+        </div>
+    </a>
+    
+    <a href="https://www.youtube.com/channel/your-channel">
+        <div class="gallery-item">
+            <img src="img/background.png" alt="Image 3">
+            <p>Videos</p>
+        </div>
+    </a>
+</div>
             </div>
           </section>
           
@@ -230,7 +246,7 @@
                       </div>
                     </div>
                     <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
-                      <form class="form-box">
+                        <form class="form-box" action="contact.php" method="post"></form>
                         <div class="container-block form-wrapper">
                           <p class="text-blk contactus-head">
                             <a class="link" href="">
@@ -262,6 +278,11 @@
                           </button>
                         </div>
                       </form>
+                      <?php
+                      if (isset($_GET['success']) && $_GET['success'] == 1) {
+                        echo '<p class="success-message">Your message has been sent successfully!</p>';
+                      }
+                      ?>
                     </div>
                   </div>
                 </div>
